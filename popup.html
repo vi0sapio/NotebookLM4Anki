@@ -1,18 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Data Extractor</title>
+  <title>NotebookLM4Anki</title>
   <style>
     body {
-      width: 250px;
-      font-family: sans-serif;
+      width: 300px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       text-align: center;
+      padding: 10px;
+      margin: 0;
+    }
+    h3 {
+      margin-top: 0;
+      color: #4285f4;
     }
     button { 
       padding: 10px;
       width: 80%; 
       margin: 10px 0;
       cursor: pointer;
+      background-color: #4285f4;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #3367d6;
+    }
+    button:active {
+      background-color: #2a56c6;
     }
     pre {
       white-space: pre-wrap;
@@ -21,14 +39,27 @@
       padding: 10px;
       border-radius: 5px;
       text-align: left;
+      max-height: 150px;
+      overflow-y: auto;
+      font-size: 12px;
+    }
+    .instructions {
+      font-size: 12px;
+      color: #666;
+      margin-bottom: 10px;
+      text-align: left;
     }
   </style>
 </head>
 <body>
-  <h3>Flashcards Extractor</h3>
-  <button id="extractBtn">Extract Data</button>
-  <h4>Result:</h4>
-  <pre id="result">...</pre>
+  <h3>NotebookLM4Anki</h3>
+  <div class="instructions">
+    1. Open a NotebookLM notebook with flashcards<br>
+    2. Click the button below to extract and download
+  </div>
+  <button id="extractBtn">Extract Flashcards</button>
+  <h4>Status:</h4>
+  <pre id="result">Ready to extract flashcards...</pre>
   <script src="popup.js"></script>
 </body>
 </html>
