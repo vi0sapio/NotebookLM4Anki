@@ -32,7 +32,7 @@ A Chrome extension that extracts flashcards from Google's NotebookLM and convert
 
 ## License
 
-[MIT License](LICENSE)
+[GNU LESSER GENERAL PUBLIC LICENSE](LICENSE)
 
 ## Support
 
