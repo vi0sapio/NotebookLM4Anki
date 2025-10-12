@@ -8,6 +8,10 @@ A Chrome extension that extracts flashcards from Google's NotebookLM and convert
 - Automatic conversion to Anki-compatible CSV format
 - Immediate download of the converted flashcards
 
+### Media
+![](https://github.com/user-attachments/assets/a59a41b9-f49e-4771-8d8b-a28d6885f961)
+
+
 ### Manual Installation (Developer Mode)
 1. Download or clone this repository
 2. Open Chrome and navigate to `chrome://extensions/`
