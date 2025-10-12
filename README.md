@@ -1,2 +1,50 @@
 # NotebookLM4Anki
-Convert NotebookLM Flashcards to CSV
+
+A Chrome extension that extracts flashcards from Google's NotebookLM and converts them to Anki-compatible CSV format.
+
+## Features
+
+- One-click extraction of flashcards from NotebookLM
+- Automatic conversion to Anki-compatible CSV format
+- Immediate download of the converted flashcards
+
+## Installation
+
+### From Chrome Web Store
+1. Visit the [Chrome Web Store page for NotebookLM4Anki](https://chrome.google.com/webstore/detail/your-extension-id)
+2. Click "Add to Chrome"
+3. Confirm the installation
+
+### Manual Installation (Developer Mode)
+1. Download or clone this repository
+2. Open Chrome and navigate to `chrome://extensions/`
+3. Enable "Developer mode" in the top-right corner
+4. Click "Load unpacked" and select the extension directory
+5. The extension should now appear in your toolbar
+
+## Usage
+
+1. Navigate to [NotebookLM](https://notebooklm.google.com/) and open a notebook with flashcards
+2. Click the NotebookLM4Anki extension icon in your browser toolbar
+3. Click the "Extract Flashcards" button
+4. The flashcards will be downloaded as a CSV file named `notebooklm_flashcards.csv`
+
+## Importing to Anki
+
+1. Open Anki
+2. Click "Import File" from the main screen
+3. Select the downloaded CSV file
+4. Make sure the field mapping is correct (Front → Front, Back → Back)
+5. Click "Import"
+
+## Privacy
+
+This extension does not collect or transmit any user data. All processing happens locally in your browser.
+
+## License
+
+[MIT License](LICENSE)
+
+## Support
+
+If you encounter any issues or have suggestions for improvements, please [open an issue](https://github.com/yourusername/NotebookLM4Anki/issues) on GitHub.
