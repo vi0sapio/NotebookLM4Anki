@@ -10,7 +10,7 @@ document.getElementById('extractBtn').addEventListener('click', () => {
         {
           target: { tabId: activeTab.id, allFrames: true },
           files: ['content_script.js'],
-        },
+        }, 
         () => {
 
           chrome.tabs.sendMessage(activeTab.id, { action: "extractData" }, (response) => {
@@ -23,7 +23,7 @@ document.getElementById('extractBtn').addEventListener('click', () => {
               });
 
               data = data.join('\n');
-              
+
               const blob = new Blob([data], { type: 'text/csv;charset=utf-8;' });
               const url = URL.createObjectURL(blob);
               const a = document.createElement('a');
