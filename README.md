@@ -32,7 +32,8 @@ A Chrome extension that extracts flashcards from Google's NotebookLM and convert
 2. Click "Import File" from the main screen
 3. Select the downloaded CSV file
 4. Make sure the field mapping is correct (Front → Front, Back → Back)
-5. Click "Import"
+5. Make sure `Field separator (guessed)` is set to `Comma`
+6. Click "Import"
 
 ## License
 
