@@ -1,6 +1,6 @@
 # NotebookLM4Anki
 
-A Firefox extension that extracts flashcards from Google's NotebookLM and converts them to Anki-compatible CSV format.
+A Chrome extension that extracts flashcards from Google's NotebookLM and converts them to Anki-compatible CSV format.
 
 ## Features
 
@@ -41,5 +41,4 @@ A Firefox extension that extracts flashcards from Google's NotebookLM and conver
 
 ## Support
 
-If you encounter any issues or have suggestions for improvements, please [open an issue](https://github.com/vi0sapio/NotebookLM4Anki/issues) on GitHub.
-
+If you encounter any issues or have suggestions for improvements, please [open an issue](https://github.com/yourusername/NotebookLM4Anki/issues) on GitHub.
