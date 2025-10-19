@@ -4,7 +4,7 @@ document.getElementById('extractBtn').addEventListener('click', () => {
   resultElement.innerText = 'Extracting data...';
   
   // Get the current active tab
-  chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+  browser.tabs.query({ active: true, currentWindow: true }, (tabs) => {
     const activeTab = tabs[0];
     
     // Check if we're on the NotebookLM site
@@ -14,21 +14,21 @@ document.getElementById('extractBtn').addEventListener('click', () => {
     }
 
     // Inject the content script into all frames in the active tab
-    chrome.scripting.executeScript(
+    browser.scripting.executeScript(
       {
         target: { tabId: activeTab.id, allFrames: true },
         files: ['content_script.js'],
       }, 
       () => {
-        if (chrome.runtime.lastError) {
-          resultElement.innerText = `Error injecting script: ${chrome.runtime.lastError.message}`;
+        if (browser.runtime.lastError) {
+          resultElement.innerText = `Error injecting script: ${browser.runtime.lastError.message}`;
           return;
         }
 
         // Send message to the content script to extract data
-        chrome.tabs.sendMessage(activeTab.id, { action: "extractData" }, (response) => {
-          if (chrome.runtime.lastError) {
-            resultElement.innerText = `Error: ${chrome.runtime.lastError.message}`;
+        browser.tabs.sendMessage(activeTab.id, { action: "extractData" }, (response) => {
+          if (browser.runtime.lastError) {
+            resultElement.innerText = `Error: ${browser.runtime.lastError.message}`;
             return;
           }
           
